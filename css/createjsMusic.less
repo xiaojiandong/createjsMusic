@@ -1,0 +1,36 @@
+*{
+  text-align: center;
+  font-family: '微软雅黑';
+}
+img{
+  display: block;
+}
+.doudizhu-bg{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background-image: url("../img/doudizhu.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  .icon-play{
+    position: absolute;
+    top: 250px;
+    left: 270px;
+    width: 64px;
+    height: 64px;
+  }
+  .playing-animate{
+    -webkit-animation: rotateAnimate 3.3s 0.1s backwards;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes rotateAnimate{
+    0%{
+      -webkit-transform:rotate(0deg);
+    }
+    100%{
+      -webkit-transform:rotate(360deg);
+    }
+  }
+}
